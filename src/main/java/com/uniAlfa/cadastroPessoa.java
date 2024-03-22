@@ -17,18 +17,15 @@ public class cadastroPessoa extends JFrame {
         GridBagConstraints constraints = new GridBagConstraints();
         constraints.insets = new Insets(5,5,5,5);
 
-
         JLabel labelNome = new JLabel("Nome:");
         constraints.gridx = 0;
         constraints.gridy = 0;
         painel.add(labelNome, constraints);
 
-
         campoNome = new JTextField(20);
         constraints.gridx = 1;
         constraints.gridy = 0;
         painel.add(campoNome, constraints);
-
 
         botao = new JButton("Salvar");
         botao.addActionListener(e -> executarAcaoBotao());
@@ -36,8 +33,6 @@ public class cadastroPessoa extends JFrame {
         constraints.gridy = 2;
         constraints.gridwidth = 2;
         painel.add(botao, constraints);
-
-
 
         add(painel);
         setLocationRelativeTo(null);
@@ -47,8 +42,6 @@ public class cadastroPessoa extends JFrame {
     private void executarAcaoBotao(){
         JOptionPane.showMessageDialog(this,
                 campoNome.getText() + ", salvo com sucesso!");
-
-
 
     }
 }
